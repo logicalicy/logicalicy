@@ -5,6 +5,7 @@
     "angular-mocks": "latest",
     "angular-route": "latest",
     "underscore": "latest",
-    "bootstrap-sass": "latest"
+    "bootstrap-sass": "latest",
+    "font-awesome": "latest"
   }
 }
