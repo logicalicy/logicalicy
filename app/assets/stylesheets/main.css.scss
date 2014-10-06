@@ -4,3 +4,51 @@
 
 @import "bootstrap-sass.css";
 @import "font-awesome/css/font-awesome.css";
+@import "carousel.css";
+@import "custom-lavish-bootstrap.css";
+
+#jumbo {
+  // background-color: #00B233;
+  // color: #eee;
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+  }
+}
+
+.initiatives {
+  i.fa {
+    width: 140px;
+    height: 140px;
+    font-size: 140px;
+  }
+}
+
+footer {
+  h2 {
+    position: relative;
+    top: -25px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+
+.ds-btn li {
+  list-style: none; 
+  float: left; 
+  padding: 10px; 
+}
+.ds-btn li a span {
+  padding-left: 15px;
+  padding-right: 5px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+.ds-btn li a span small {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}

@@ -5,12 +5,82 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <!-- Google Font for logo. -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<div ng-view>
-  <%= yield %>
+  <div ng-view>
+    <%= yield %>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 text-center">
+          <h2 class="text-center">Powered by:</h2>
+        </div>
+        <div class="col-md-2 text-center">
+          <a class="btn btn-md btn-success" href="http://fortawesome.github.io/Font-Awesome/" target="_blank">
+            <i class="fa fa-flag fa-2x pull-left"></i>
+            Font Awesome
+            <br/>
+            Version 4.2.0
+          </a>
+        </div>
+        <div class="col-md-2 text-center">
+         <a class="btn btn-md btn-danger" href="http://getbootstrap.com/" target="_blank">
+          <span>
+            Bootstrap
+            <br/>
+            <small>Version 3.2.0</small>
+          </span>
+        </a> 
+      </div>
+      <div class="col-md-2 text-center">
+        <a class="btn btn-md btn-warning" href="http://rubyonrails.org/" target="_blank">
+        <span>
+          Ruby on Rails
+          <br/>
+          <small>Version 4.1.6</small>
+        </span>
+      </a> 
+    </div>
+    <div class="col-md-2 text-center">
+     <a class="btn btn-md btn-info" href="https://angularjs.org/" target="_blank">
+      <span>
+        Angular
+        <br/>
+        <small>Version 1.2.26</small>
+      </span>
+    </a> 
+  </div>
+  <div class="col-md-2 text-center">
+     <a class="btn btn-md btn-default" href="https://digitalocean.com/" target="_blank">
+      <span>
+        Digital Ocean
+        <br/>
+        <small>512MB / 1 Core / 20GB</small>
+      </span>
+    </a> 
+  </div>
+</div>
 </div>
 
+<br><br>
+
+<div class="container text-center">
+  <a href="https://www.github.com/logicalicy" target="_blank"><i id="social" class="fa fa-github fa-3x social-gh"></i></a>
+  <a href="https://twitter.com/logicalicy" target="_blank"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+  <a href="https://blog.logicalicy.com" target="_blank"><i id="social" class="fa fa-wordpress fa-3x social-wp"></i></a>
+  <a href="https://uk.linkedin.com/in/mariohayashi" target="_blank"><i id="social" class="fa fa-linkedin-square fa-3x social-li"></i></a>
+  <br><br>
+  <a href="/">© 2014 Mario Hayashi.</a>
+</div>
+
+</footer>
+
 </body>
+
 </html>
