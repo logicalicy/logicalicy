@@ -40,6 +40,11 @@ gem 'spring',        group: :development
 
 group :test, :development do
   gem "rspec-rails", "~> 2.14.0"
+  gem 'capybara', '~> 2.4.3'
+  gem 'guard-rspec'
+  gem 'growl'
+  gem 'growl_notify'
+  gem 'launchy' # Get visual snapshot of what's going on.
 end
 
 gem 'bower-rails'
