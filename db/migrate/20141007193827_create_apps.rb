@@ -9,5 +9,7 @@ class CreateApps < ActiveRecord::Migration
 
       t.timestamps
     end
+    # Add constraints.
+    add_index :apps, :name, unique: true
   end
 end
