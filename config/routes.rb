@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :apps
+
   get 'static/index'
   root 'static#index'
 
