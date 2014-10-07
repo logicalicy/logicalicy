@@ -7,6 +7,8 @@
 @import "carousel.css";
 @import "custom-lavish-bootstrap.css";
 
+$dark_orange: #f15401;
+
 #jumbo {
   // background-color: #00B233;
   // color: #eee;
@@ -17,10 +19,25 @@
 }
 
 .initiatives {
-  i.fa {
-    width: 140px;
-    height: 140px;
-    font-size: 140px;
+  .circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $dark_orange;
+    i.fa {
+      font-size: 140px;
+      &.fa-flask {
+        padding-top: 20px;
+      }
+      &.fa-wordpress {
+        padding-top: 28px;
+      }
+      &.fa-birthday-cake {
+        padding-top: 20px;
+      }
+    }
   }
 }
 
