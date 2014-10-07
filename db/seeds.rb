@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# rails g model apps name:string release_name:string release_timestamp:timestamp description:string url:string
+
+App.create([
+  { name: "in-da-hood", url: "http://in-da-hood.logicalicy.com" }
+])
