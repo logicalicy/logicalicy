@@ -6,7 +6,7 @@
 @logicalicy.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
   otherwise({
-          templateUrl: '../templates/home.html',
+          templateUrl: "<%= asset_path('templates/home.html') %>",
           controller: 'HomeCtrl'
   })
 ])
