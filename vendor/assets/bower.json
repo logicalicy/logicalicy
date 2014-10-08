@@ -4,6 +4,7 @@
     "angular": "latest",
     "angular-mocks": "latest",
     "angular-route": "latest",
+    "angular-resource": "latest",
     "underscore": "latest",
     "bootstrap-sass": "latest",
     "font-awesome": "latest"

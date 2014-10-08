@@ -1,8 +1,7 @@
 # app/assets/javascripts/angular/controllers/AppIndexCtrl.js.coffee
 
-@logicalicy.controller 'AppIndexCtrl', ['$scope', '$location', '$http', ($scope, $location, $http) ->
+@logicalicy.controller 'AppIndexCtrl', ['$scope', '$location', '$http', '$resource', ($scope, $location, $http, $resource) ->
   $scope.apps = []
-  $http.get('./apps.json').success((data) ->
-    $scope.apps = data
-  )
+  App = $resource('/apps.json')
+  $scope.apps = App.query()
 ]
