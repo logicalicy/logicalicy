@@ -5,8 +5,12 @@
 
 @logicalicy.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
+  when('/labs', {
+    templateUrl: "<%= asset_path('templates/apps/index.html') %>",
+    controller: 'AppIndexCtrl'
+  }).
   otherwise({
-          templateUrl: "<%= asset_path('templates/home.html') %>",
-          controller: 'HomeCtrl'
+    templateUrl: "<%= asset_path('templates/home.html') %>",
+    controller: 'HomeCtrl'
   })
 ])

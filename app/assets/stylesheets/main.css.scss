@@ -8,35 +8,45 @@
 @import "custom-lavish-bootstrap.css";
 
 $dark_orange: #f15401;
+$orange: #fe8601;
+
+.dark-orange {
+  background-color: $dark_orange;
+}
+.orange {
+  background-color: $orange;
+}
 
 #jumbo {
   // background-color: #00B233;
   // color: #eee;
-  h1 {
+  h1.logo {
     font-family: 'Lobster', cursive;
     font-size: 80px;
   }
 }
 
-.initiatives {
-  .circle {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-color: $dark_orange;
-    i.fa {
-      font-size: 140px;
-      &.fa-flask {
-        padding-top: 20px;
-      }
-      &.fa-wordpress {
-        padding-top: 28px;
-      }
-      &.fa-birthday-cake {
-        padding-top: 20px;
-      }
+.circle {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.circle-sm {
+  @extend .circle;
+  width: 200px;
+  height: 200px;
+  i.fa {
+    font-size: 140px;
+    &.fa-flask {
+      padding-top: 20px;
+    }
+    &.fa-wordpress {
+      padding-top: 28px;
+    }
+    &.fa-birthday-cake {
+      padding-top: 20px;
     }
   }
 }
