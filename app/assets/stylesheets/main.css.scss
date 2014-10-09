@@ -9,6 +9,25 @@
 
 $dark_orange: #f15401;
 $orange: #fe8601;
+$wordpress-blue: #21759b;
+$linkedin-blue: #007bb6;
+$twitter-blue: #00aced;
+
+$white: #fff;
+$default: #777;
+$primary: #428bca;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+@mixin background-color($color) {
+  color: $white;
+  background-color: $color;
+}
+
+.brand {
+  font-family: 'Lobster', cursive;
+}
 
 .dark-orange {
   background-color: $dark_orange;
@@ -20,8 +39,7 @@ $orange: #fe8601;
 #jumbo {
   // background-color: #00B233;
   // color: #eee;
-  h1.brand {
-    font-family: 'Lobster', cursive;
+  h1 {
     font-size: 80px;
   }
   img.img-circle {
@@ -46,31 +64,83 @@ $orange: #fe8601;
   }
 }
 
+@mixin transform($scale) {
+  -webkit-transform:scale($scale);
+  /* Browser Variations: */
+  -moz-transform:scale($scale);
+  -o-transform:scale($scale);
+}
+@mixin transition-duration($duration) {
+  -webkit-transform:scale($duration);
+  /* Browser Variations: */
+  -moz-transform:scale($duration);
+  -o-transform:scale($duration);
+}
+
 footer {
-  h2 {
-    position: relative;
-    top: -25px;
+  span {
+    font-size: 10px;
   }
-  .btn {
-    margin-bottom: 10px;
+  .social {
+    &:hover {
+      @include transform(1.1);
+    }
+    @include transform(0.8);
+    @include transition-duration(0.5s);
+  }           
+  /* 
+  Only Needed in Multi-Coloured Variation 
+  */
+  .social-gh:hover {
+    color: black;
+  }
+  .social-tw:hover {
+    color: $twitter-blue;
+  }
+  .social-wp:hover {
+    color: $wordpress-blue;
+  }
+  .social-li:hover {
+    color: $linkedin-blue;
   }
 }
 
-
-.ds-btn li {
-  list-style: none; 
-  float: left; 
-  padding: 10px; 
-}
-.ds-btn li a span {
-  padding-left: 15px;
-  padding-right: 5px;
-  width: 100%;
+.list-group-horizontal .list-group-item {
   display: inline-block;
-  text-align: left;
-}
-.ds-btn li a span small {
-  width: 100%;
-  display: inline-block;
-  text-align: left;
+  border: 0;
+  margin: {
+    bottom: 0;
+    left:-4px;
+    right: 0;
+  }
+  &:first-child {
+    border: {
+      top-right-radius:0;
+      bottom-left-radius:4px;
+    }
+  }
+  &:last-child {
+    border: {
+      top-right-radius:4px;
+      bottom-left-radius:0;
+    }
+  }
+  &.default {
+    @include background-color($default);
+  }
+  &.primary {
+    @include background-color($primary);
+  }
+  &.success {
+    @include background-color($success);
+  }
+  &.info {
+    @include background-color($info);
+  }
+  &.warning {
+    @include background-color($warning);
+  }
+  &.danger {
+    @include background-color($danger);
+  }
 }
