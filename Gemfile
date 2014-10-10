@@ -48,3 +48,6 @@ group :test, :development do
 end
 
 gem 'bower-rails'
+
+# Seach engine optimization.
+gem 'sitemap'

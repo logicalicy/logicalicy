@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :apps
 
-  get 'static/index'
+  # Home page
+  # GET /
   root 'static#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
