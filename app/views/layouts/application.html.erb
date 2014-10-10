@@ -9,7 +9,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <meta name="google-site-verification" content="WpJPFmnDCdjD3rx-erHQTXMTO_eoqIWrL_h0riEyuOo" />
 </head>
-<body>
+<body ng-controller="MainController" data-status="{{ status }}">
 
   <div ng-view autoscroll="true">
     <%= yield %>

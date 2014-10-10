@@ -19,3 +19,7 @@ angular.module('HashBangURLs', []).config(['$locationProvider', ($location) ->
     controller: 'HomeCtrl'
   })
 ])
+
+@logicalicy.controller('MainController', ['$scope', ($scope) ->
+  $scope.status = 'ready'
+])
