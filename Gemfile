@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+# ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -44,7 +44,7 @@ group :test, :development do
   gem 'capybara', '~> 2.4.3'
   gem 'guard-rspec'
   gem 'growl'
-  gem 'growl_notify'
+  # gem 'growl_notify' # Comment out before pushing.
   gem 'launchy' # Get visual snapshot of what's going on.
 end
 
