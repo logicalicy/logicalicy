@@ -44,7 +44,7 @@ group :test, :development do
   gem 'capybara', '~> 2.4.3'
   gem 'guard-rspec'
   gem 'growl'
-  # gem 'growl_notify' # Comment out before pushing.
+  gem 'growl_notify' # Comment out before pushing.
   gem 'launchy' # Get visual snapshot of what's going on.
 end
 
