@@ -29,6 +29,18 @@ $danger: #d9534f;
   font-family: 'Lobster', cursive;
 }
 
+.teamcaptain-logo {
+  font: {
+    family: 'Black Ops One', cursive;
+    size: 200px;
+  }
+  a {
+    text-decoration: none;
+    top: -20px;
+    position: relative;
+  }
+}
+
 .dark-orange {
   background-color: $dark_orange;
 }
