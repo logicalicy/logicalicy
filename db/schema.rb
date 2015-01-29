@@ -23,4 +23,6 @@ ActiveRecord::Schema.define(version: 20141007193827) do
     t.datetime "updated_at"
   end
 
+  add_index "apps", ["name"], name: "index_apps_on_name", unique: true
+
 end
